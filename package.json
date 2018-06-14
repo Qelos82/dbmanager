@@ -1,0 +1,22 @@
+{
+  "name": "dbmanager",
+  "version": "1.0.0",
+  "description": "Database installation-migration-upgrade manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qelos82/dbmanager.git"
+  },
+  "author": "Mirko Scalingi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qelos82/dbmanager/issues"
+  },
+  "homepage": "https://github.com/Qelos82/dbmanager#readme",
+  "dependencies": {
+    "electron": "^2.0.2"
+  }
+}
