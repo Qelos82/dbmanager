@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/Qelos82/dbmanager#readme",
   "dependencies": {
-    "electron": "^2.0.2"
-  }
+    "electron": "^2.0.2",
+    "ping": "^0.2.2"
+  },
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "electron-packager": "^12.1.0"
+  },
+  "copy-assets": "xcopy src\\electron\\* dist\\ /y && xcopy package.json dist\\ /y && xcopy src\\deps dist\\src\\deps\\ /y /s /i",
+  "build-electron": "npm run build && npm run copy-assets",
+  "run-electron": "npm run build-electron && electron dist",
+  "build-electron-app": "npm run build-electron && electron-packager dist --overwrite"
 }

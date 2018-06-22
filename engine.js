@@ -70,3 +70,15 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+function execute(command) {
+  const exec = require('child_process').exec
+
+  exec(command, (err, stdout, stderr) => {
+    process.stdout.write(stdout)
+  })
+}
+
+function testConnection() {
+  
+}
