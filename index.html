@@ -15,16 +15,21 @@
 <div class="tab">
   <h2>Connection Settings</h2>
   <br>
-  <h3>Database</h3>
+	<h3>Database</h3>
+	<p><select>
+		<option value="db2">DB2</option>
+		<option value="oracle">Oracle</option>
+	  <option value="postgre">Postgres</option>
+	</select></p>
   <p><input placeholder="Host" oninput="this.className = ''"></p>
   <p><input placeholder="Port" oninput="this.className = ''"></p>
-  <p><input placeholder="Name" oninput="this.className = ''"></p>
+	<p><input placeholder="Name" oninput="this.className = ''"></p>
   <br>
   <h3>Security</h3>
   <p><input placeholder="Username" oninput="this.className = ''"></p>
-  <p><input placeholder="Password" type="password" oninput="this.className = ''"></p>
-  <br>
-  <p><button type="button" id="test" onclick="execute("ping localhost")">Test Connection</button><p>
+	<p><input placeholder="Password" type="password" oninput="this.className = ''"></p>
+	<br>
+  <p><button type="button" id="test" onclick="execute('ping 127.0.0.1')">Test Connection</button><p>
 </div>
 
 	<div class="tab">
